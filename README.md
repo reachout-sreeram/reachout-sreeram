@@ -14,7 +14,7 @@
 
 🚀 &nbsp; AI Engineer crafting production-grade **ML, GenAI & Agentic AI systems**
 
-🏆 &nbsp; **1st Prize** at the **AWS Gen AI Hackathon** — built and shipped under pressure
+🏆 &nbsp; **1st Prize** at the **AWS Gen AI Hackathon**
 
 🧠 &nbsp; Obsessed with **LLM pipelines · RAG · Agentic workflows · Vector Search**
 
