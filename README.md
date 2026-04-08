@@ -76,7 +76,7 @@
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=reachout-sreeram&theme=midnight-purple&hide_border=true)
+<!-- ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=reachout-sreeram&theme=midnight-purple&hide_border=true) -->
 
 <!-- [![Saketh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reachout-sreeram&theme=midnight-purple&hide_border=true&show_icons=true)](https://github.com/reachout-sreeram) -->
 
