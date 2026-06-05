@@ -6,6 +6,22 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Building+Agentic+AI+Systems;RAG+%7C+LLMs+%7C+MLOps;Turning+data+into+decisions;AWS+Gen+AI+Hackathon+Winner+%F0%9F%8F%86" alt="Typing SVG" />
 </a>
 
+<br/>
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/reachout-sreeram/reachout-sreeram/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/reachout-sreeram/reachout-sreeram/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake Animation" src="https://raw.githubusercontent.com/reachout-sreeram/reachout-sreeram/output/github-contribution-grid-snake.svg" />
+</picture>
+
+<br/>
+<br/>
+
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/yusufyusie/yusufyusie/blob/main/line.gif">
+  <img src="https://raw.githubusercontent.com/yusufyusie/yusufyusie/main/line.gif" alt="divider" style="max-width: 100%; display: inline-block;"/>
+</a>
+
 </div>
 
 ## 👨‍💻 About Me
