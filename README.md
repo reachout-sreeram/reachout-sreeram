@@ -86,18 +86,17 @@
 ![ECR](https://img.shields.io/badge/ECR-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-0EA5E9?style=flat-square)
 
----
-
+<!--
 ## 📊 GitHub Stats
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=reachout-sreeram&theme=midnight-purple&hide_border=true) 
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=reachout-sreeram&theme=midnight-purple&hide_border=true) -->
 
 <!-- [![Saketh's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reachout-sreeram&theme=midnight-purple&hide_border=true&show_icons=true)](https://github.com/reachout-sreeram) -->
 
 <!-- [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=reachout-sreeram&theme=midnight-purple&hide_border=true&layout=compact)](https://github.com/reachout-sreeram)
-</div>
+</div> -->
 
 
 
