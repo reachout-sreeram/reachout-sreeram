@@ -740,6 +740,7 @@ code {
     align-items: center;
     border-top: 1px solid var(--border-color);
     padding-top: 1rem;
+    gap: 1rem;
 }
 
 .project-link {
