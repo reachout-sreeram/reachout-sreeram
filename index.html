@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Saketh Sree Ram">
+    <meta name="description" content="Saketh Sree Ram is an AI/ML Engineer building production-grade LLM and agentic systems at scale. Shipped fine-tuned DeBERTa, agentic assistants, and winner of AWS Gen AI Hackathon 2025.">
+    <meta name="keywords" content="Saketh Sree Ram, AI Engineer, ML Engineer, GenAI, Agentic Systems, LLMOps, RAG, AWS Bedrock, Model Context Protocol, LangGraph, Python, DeBERTa">
+    <title>Saketh Sree Ram | AI/ML Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css?v=1.1">
+</head>
+<body>
+
+    <!-- Mobile Top Navigation Header -->
+    <header class="mobile-header">
+        <div class="logo">
+            <span class="logo-text">Saketh Sreeram</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Navigation Sidebar (Desktop & Mobile Drawer) -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <h1 class="brand-name">Saketh Sreeram</h1>
+            <p class="brand-title">
+                <span class="role-rotator" id="roleRotator" aria-live="polite"></span><span class="role-cursor" aria-hidden="true"></span>
+            </p>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#home" class="nav-item active" data-tab="home">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#experience" class="nav-item" data-tab="experience">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" class="nav-item" data-tab="projects">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills" class="nav-item" data-tab="skills">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-item" data-tab="contact">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Direct Resume Download Button -->
+        <div class="resume-download-wrapper">
+            <a href="docs/saketh_AI.pdf" class="btn btn-primary btn-resume" target="_blank" rel="noopener noreferrer">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View CV</span>
+            </a>
+        </div>
+
+        <!-- Social Connects -->
+        <div class="sidebar-footer">
+            <span class="footer-label">Connect</span>
+            <div class="social-links">
+                <a href="https://github.com/reachout-sreeram" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/sakethsreeram7" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="mailto:reachout.sreeram@gmail.com" title="Email" aria-label="Email">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Saketh Sreeram</p>
+        </div>
+    </nav>
+
+    <!-- Overlay backdrop for mobile menu drawer -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content Area -->
+    <main class="content-wrapper">
+        <div class="main-content">
+            
+            <!-- HOME SECTION -->
+            <section id="home" class="content-section active">
+                <div class="section-container">
+                    <div class="hero-block">
+                        <h2 class="hero-title">Hey, I'm Saketh</h2>
+                        <h3 class="hero-subtitle">
+                            <span class="hero-role-rotator" id="heroRoleRotator"></span><span class="role-cursor role-cursor-lg" aria-hidden="true"></span>
+                        </h3>
+
+                        <div class="hero-prose">
+                            <p>
+                                I build <strong>production LLM and agentic systems</strong> that actually ship &mdash; from fine-tuned models to multi-agent workflows running in front of real enterprise customers.
+                            </p>
+                            <p>
+                                Right now I'm an AI/ML Engineer at <a href="#experience" class="nav-shortcut inline-link" data-target="experience">Aquera</a>, where I've shipped a Claude-powered agentic assistant on AWS Bedrock, a fine-tuned DeBERTa classifier serving <strong>1,000+ enterprise customers</strong>, and an IAM rule-mining engine that cut onboarding from weeks to a single call.
+                            </p>
+                            <p>
+                                On the side I build <a href="#projects" class="nav-shortcut inline-link" data-target="projects">developer tools and AI agents</a> &mdash; published VS Code extensions, an autonomous job-search agent, and MCP integrations. I won the <strong>AWS Gen AI Hackathon 2025</strong> for an MCP-based multi-agent architecture.
+                            </p>
+                            <p class="hero-prose-cta">
+                                You can talk to me about AI, agents, new ideas, or anything else. Say hi over <a href="mailto:reachout.sreeram@gmail.com" class="inline-link">email</a> or <a href="#contact" class="nav-shortcut inline-link" data-target="contact">drop me a message</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Featured highlight card -->
+                    <a href="#projects" class="featured-card nav-shortcut" data-target="projects">
+                        <span class="featured-eyebrow">Featured · 2025</span>
+                        <div class="featured-body">
+                            <div class="featured-icon">
+                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                </svg>
+                            </div>
+                            <div class="featured-text">
+                                <h4>AWS Gen AI Hackathon Winner</h4>
+                                <p>Recognised for engineering quality and novelty of a Model Context Protocol (MCP) based multi-agent architecture, built with a team of 5.</p>
+                            </div>
+                            <span class="featured-arrow" aria-hidden="true">
+                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Quick Navigation Helper -->
+                    <div class="home-actions">
+                        <a href="#projects" class="btn btn-outline nav-shortcut" data-target="projects">Explore Projects</a>
+                        <a href="#contact" class="btn btn-primary nav-shortcut" data-target="contact">Get in Touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE SECTION -->
+            <section id="experience" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-title">Work Experience</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <div class="timeline-title-row">
+                                    <h3 class="timeline-role">AI/ML Engineer</h3>
+                                    <span class="timeline-date">Apr 2024 – Present</span>
+                                </div>
+                                <div class="timeline-subtitle-row">
+                                    <h4 class="timeline-company">Aquera</h4>
+                                    <span class="timeline-location">Bangalore, India</span>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <ul>
+                                    <li>
+                                        <strong>Agentic AI Assistant (AWS Bedrock):</strong> Built a Claude-powered agentic loop with MCP connectors, human-in-the-loop gating, and multi-agent orchestration (LangGraph, CrewAI-style task decomposition) for HR-to-AD script generation; context compression for nested API schemas. Cut script-writing 75% across 100+ developers.
+                                    </li>
+                                    <li>
+                                        <strong>DeBERTa Fine-tuning & Evaluation:</strong> Fine-tuned DeBERTa-v3 (40K HR records) for service-account classification; built an LLM-assisted labeling pipeline and golden-dataset eval harness with per-slice F1 tracking. 99.8% F1 on SageMaker, serving 1000+ enterprise customers.
+                                    </li>
+                                    <li>
+                                        <strong>IAM Rule-Mining Engine:</strong> Built a CatBoost + RuleFit pipeline for auditable role-assignment rules, modeled as a knowledge graph. 85%+ accuracy on 350 live datasets; cut onboarding from 4–8 weeks to a 1–2 hour call (SageMaker, ECR, GPU inference).
+                                    </li>
+                                    <li>
+                                        <strong>GenBI Platform:</strong> Built a RAG-based NL→SQL engine with LLM-generated dashboards for self-serve analytics, eliminating engineering dependency for routine queries.
+                                    </li>
+                                    <li>
+                                        <strong>MLOps & LLMOps:</strong> Owned end-to-end deployment across all ML systems (Docker, CI/CD, AWS Lambda, SageMaker, ECR); LLM observability via call tracing, cost attribution, and guardrails over PostgreSQL dataflows.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Segment -->
+                    <h2 class="section-title education-title">Education</h2>
+                    <div class="education-block">
+                        <div class="education-header">
+                            <div class="education-title-row">
+                                <h3 class="education-school">New Horizon College of Engineering</h3>
+                                <span class="education-date">Graduated Jun 2024</span>
+                            </div>
+                            <div class="education-subtitle-row">
+                                <p class="education-degree">B.E., Artificial Intelligence and Machine Learning</p>
+                                <span class="education-gpa">GPA: 9.57 / 10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-title">Projects</h2>
+                    
+                    <!-- Filters -->
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="extensions">VS Code Extensions</button>
+                        <button class="filter-btn" data-filter="agentic">AI & Agentic Systems</button>
+                    </div>
+
+                    <!-- Projects Grid -->
+                    <div class="projects-grid">
+                        
+                        <!-- VS Code Variable Explorer -->
+                        <div class="project-card" data-category="extensions">
+                            <div class="project-card-header">
+                                <span class="project-year">2026</span>
+                                <h3 class="project-name">VS Code Variable Explorer</h3>
+                                <span class="project-tags">TypeScript, VS Code Extension API, Python, ZeroMQ</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p>
+                                    Published a VS Code extension with a hybrid TypeScript–Python IPC architecture. A gateway process bridges the extension host to a live IPython kernel over ZeroMQ via newline-delimited JSON on stdin/stdout, featuring stateful webviews with paginated DataFrame views.
+                                </p>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com/reachout-sreeram/vs-variable-explorer" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- VS Code Focus Timer -->
+                        <div class="project-card" data-category="extensions">
+                            <div class="project-card-header">
+                                <span class="project-year">2026</span>
+                                <h3 class="project-name">VS Code Focus Timer (Agent Memory)</h3>
+                                <span class="project-tags">TypeScript, VS Code Extension API, Node.js</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p>
+                                    Designed a local <code>.focus/</code> persistence layer (JSON/Markdown) driven by extension lifecycle and file-system/git watchers. Acts as a recoverable workspace memory shared between developers and AI coding agents.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- AI Job Search Agent -->
+                        <div class="project-card" data-category="agentic">
+                            <div class="project-card-header">
+                                <span class="project-year">2026</span>
+                                <h3 class="project-name">AI Job Search Agent</h3>
+                                <span class="project-tags">Claude Agent SDK, FastAPI, Next.js, LangChain, ChromaDB</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p>
+                                    Designed an asynchronous multi-agent system: FastAPI backend with background workers on a job queue, a ChromaDB vector layer for profile/JD matching and caching, and a Next.js Kanban UI for human-in-the-loop review. Cut per-application time by 90%.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Code Compass -->
+                        <div class="project-card" data-category="agentic">
+                            <div class="project-card-header">
+                                <span class="project-year">2025</span>
+                                <h3 class="project-name">Code Compass</h3>
+                                <span class="project-tags">VS Code Extension, AWS Bedrock, MCP</span>
+                            </div>
+                            <div class="project-card-body">
+                                <p>
+                                    Built an MCP integration layer (team of 5) unifying GitHub, Slack, and Jira as live context sources behind a VS Code extension; orchestrated retrieval across all three for component-level code walkthroughs. Cut onboarding by 75%.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    
+                    <div class="skills-container">
+                        
+                        <!-- ML & LLMs -->
+                        <div class="skills-block">
+                            <h3>ML & Deep Learning</h3>
+                            <div class="skills-grid">
+                                <span class="skill-chip">PyTorch</span>
+                                <span class="skill-chip">DeBERTa</span>
+                                <span class="skill-chip">Fine-Tuning</span>
+                                <span class="skill-chip">CatBoost</span>
+                                <span class="skill-chip">Hugging Face</span>
+                                <span class="skill-chip">Scikit-learn</span>
+                            </div>
+                        </div>
+
+                        <!-- GenAI & Agents -->
+                        <div class="skills-block">
+                            <h3>Generative AI & Agentic Systems</h3>
+                            <div class="skills-grid">
+                                <span class="skill-chip">RAG</span>
+                                <span class="skill-chip">Agentic Orchestration</span>
+                                <span class="skill-chip">LangGraph</span>
+                                <span class="skill-chip">CrewAI</span>
+                                <span class="skill-chip">LangChain</span>
+                                <span class="skill-chip">Model Context Protocol (MCP)</span>
+                                <span class="skill-chip">ChromaDB</span>
+                                <span class="skill-chip">Human-in-the-Loop</span>
+                                <span class="skill-chip">Knowledge Graphs</span>
+                                <span class="skill-chip">AWS Bedrock</span>
+                            </div>
+                        </div>
+
+                        <!-- LLMOps & Evaluation -->
+                        <div class="skills-block">
+                            <h3>LLMOps & Evaluation</h3>
+                            <div class="skills-grid">
+                                <span class="skill-chip">LLM-as-Judge</span>
+                                <span class="skill-chip">Golden Datasets</span>
+                                <span class="skill-chip">Hallucination Detection</span>
+                                <span class="skill-chip">Guardrails</span>
+                                <span class="skill-chip">Tracing & Observability</span>
+                                <span class="skill-chip">Cost Attribution</span>
+                                <span class="skill-chip">Context Engineering</span>
+                            </div>
+                        </div>
+
+                        <!-- Cloud & MLOps -->
+                        <div class="skills-block">
+                            <h3>Cloud & MLOps</h3>
+                            <div class="skills-grid">
+                                <span class="skill-chip">AWS (SageMaker, Lambda, ECR)</span>
+                                <span class="skill-chip">Docker</span>
+                                <span class="skill-chip">CI/CD</span>
+                                <span class="skill-chip">GPU Inference</span>
+                                <span class="skill-chip">Data Pipelines</span>
+                            </div>
+                        </div>
+
+                        <!-- Languages & Data -->
+                        <div class="skills-block">
+                            <h3>Languages & Data</h3>
+                            <div class="skills-grid">
+                                <span class="skill-chip">Python</span>
+                                <span class="skill-chip">TypeScript</span>
+                                <span class="skill-chip">Node.js</span>
+                                <span class="skill-chip">PostgreSQL</span>
+                                <span class="skill-chip">Pandas</span>
+                                <span class="skill-chip">NumPy</span>
+                                <span class="skill-chip">REST APIs</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="content-section">
+                <div class="section-container">
+                    <h2 class="section-title">Get in Touch</h2>
+                    
+                    <div class="contact-layout">
+                        <div class="contact-info">
+                            <p class="contact-lead">
+                                Have an interesting project in AI engineering, agentic systems, or MLOps? Let's connect!
+                            </p>
+                            
+                            <div class="contact-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="detail-text">
+                                        <h4>Email</h4>
+                                        <a href="mailto:reachout.sreeram@gmail.com">reachout.sreeram@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item">
+                                    <div class="detail-icon">
+                                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="detail-text">
+                                        <h4>Location</h4>
+                                        <p>Bangalore, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-container">
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                                <div id="formStatus" class="form-status"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Script Links -->
+    <script src="script.js?v=1.1"></script>
+</body>
+</html>
