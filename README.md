@@ -34,7 +34,7 @@
 
 🧠 &nbsp; Obsessed with **LLM pipelines · RAG · Agentic workflows · Vector Search**
 
-🌱 &nbsp; Currently leveling up → `DeepLearning` &nbsp;`Tesorflow`
+🌱 &nbsp; Currently leveling up → `DeepLearning` &nbsp;`Tensorflow`
 
 💬 &nbsp; Happy to talk **Python · GenAI · ML · NLP · MLOps**
 
